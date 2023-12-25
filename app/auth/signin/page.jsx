@@ -17,7 +17,7 @@ export default function SignIn() {
         <h2 className="text-center
          pb-7">Sign In</h2>
 
-          <label className="text-light-gray">
+          <label className="body small">
             Email:
           </label>
           <input
@@ -25,10 +25,10 @@ export default function SignIn() {
             id="email"
             name="email"
             required
-            className="w-full px-4 py-2 border-none rounded mb-4"
+            className="w-full  px-4 py-2 border-none rounded mb-4"
           />
 
-          <label className=" block text-light-gray">
+          <label className="block body small">
             Password:
           </label>
           <input
