@@ -13,6 +13,8 @@ module.exports = {
       "gray-light": "#888888",
       light: "#EEEEEE",
       white: "#FBFBFB",
+      red: "#FF4444",
+      "red-light": "#FF444436",
     },
   },
   plugins: [],
