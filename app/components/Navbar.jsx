@@ -10,9 +10,9 @@ export default function Navbar() {
 
   return (
     <>
-      {pathname !== "/admin/dashboard" ||
-        pathname !== "/admin/arts" ||
-        (pathname !== "/admin/users" && (
+      {pathname !== "/dashboard" ||
+        pathname !== "/arts" ||
+        (pathname !== "/users" && (
           <nav className="flex justify-between items-center h-[60px]">
             <Link href="/">
               <h3>ArtArray</h3>

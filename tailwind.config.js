@@ -11,11 +11,11 @@ module.exports = {
       black: "#111111",
       gray: "#363636",
       "gray-light": "#888888",
-      light: "#EEEEEE",
+      light: "#E7E7E7",
       white: "#FBFBFB",
       red: "#FF4444",
       "red-light": "#FF444436",
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar")({ nocompatible: true })],
 };

@@ -48,3 +48,14 @@ body {
   line-height: 20px;
   font-weight: 600;
 }
+
+.text-border {
+  color: #fbfbfb;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #363636;
+}
+
+.active {
+  background-color: #e7e7e7;
+  color: #111111;
+}
