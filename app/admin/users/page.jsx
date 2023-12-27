@@ -39,12 +39,12 @@ function Users() {
                   <td class="whitespace-nowrap px-6 py-4">Otto</td>
                   <td class="whitespace-nowrap px-6 py-4">@mdo</td>
                   <td class="whitespace-nowrap px-6 py-4">
-                    <Image src={"./user.svg"} width={30} height={30} />
+                    <Image src={"/user.svg"} width={30} height={30} />
                   </td>
                   <td class="whitespace-nowrap">
                     <button className="ml-6">
                       <Image
-                        src={"./edit.svg"}
+                        src={"/edit.svg"}
                         alt="edit icon"
                         width={24}
                         height={24}
@@ -54,7 +54,7 @@ function Users() {
                   <td class="whitespace-nowrap">
                     <button className="ml-6">
                       <Image
-                        src={"./delete.svg"}
+                        src={"/delete.svg"}
                         alt="delete icon"
                         width={24}
                         height={24}

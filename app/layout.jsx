@@ -1,5 +1,4 @@
 import { Roboto_Slab } from "next/font/google";
-import Navbar from "./components/Navbar";
 import "./globals.css";
 
 const roboto_Slab = Roboto_Slab({ subsets: ["latin"] });
@@ -14,10 +13,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={roboto_Slab.className}>
         <div className="width_container mx-auto">
-          <div>
-            <Navbar />
-            {children}
-          </div>
+          <div>{children}</div>
         </div>
       </body>
     </html>
