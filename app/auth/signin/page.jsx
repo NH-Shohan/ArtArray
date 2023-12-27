@@ -4,61 +4,52 @@ import Button from "@/app/components/Button";
 
 export default function SignIn() {
   return (
-    <div className="flex">
-      <div>
-        <form 
-        className="bg-light 
-        h-[419px] 
-        w-[491px] 
-        p-10 
-        rounded-xl 
-        mt-[80px]
-        ml-[100px]">
-        <h2 className="text-center
-         pb-7">Sign In</h2>
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-1">
+  <div className="bg-light p-10 rounded-xl mt-20 ml-24">
+    <form className="grid grid-cols-1">
+      <h2 className="text-center pb-7">Sign in</h2>
 
-          <label className="body small">
-            Email:
-          </label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            required
-            className="w-full  px-4 py-2 border-none rounded mb-4"
-          />
+      <label className="block body small">Email</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter your email"
+        required
+        className="w-full px-4 py-2 border-none rounded mb-4"
+      />
 
-          <label className="block body small">
-            Password:
-          </label>
-          <input
-            type="password"
-            id="password"
-            name="password"
-            required
-            className="w-full px-4 py-2 border-none rounded mb-10"
-          />
-          <h3 className="text-center"><Button  className="
-          h-[56px] 
-          w-[406px] 
-          mb-[10px]" 
-          text="Sign In"  fill href="/" /></h3>
-          <p>Don't have an account? <Link className="body bold" href="/auth/signup">Sign up</Link></p>
-        </form>
-      </div>
-      <div >
-      <Link href="/">
-            <Image
-              className="border-none
-              mt-[50px]"
-              src="/signin.svg"
-              alt="Sgn In Icon"
-              width={500}
-              height={500}
-            />
-          </Link>
+      <label className="block body small">Password</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Enter your password"
+        required
+        className="w-full px-4 py-2 border-none rounded mb-6"
+      />
+      <h3 className="text-center">
+        <Button
+          className="w-full mb-4"
+          text="Sign in"
+          fill
+          href="/"
+        />
+      </h3>
+      <p>Already have an account?<Link className="body bold ml-2" href="/auth/signup">Sign up</Link></p>
+    </form>
+  </div>
+  <div className="flex items-center justify-center mt-24">
+    <Link href="/auth/signin">
+      <Image
+        src="/signin.svg"
+        alt="Sign In Icon"
+        width={500}
+        height={500}
+      />
+    </Link>
+  </div>
+</div>
 
-      </div>
-    </div>
   );
 }

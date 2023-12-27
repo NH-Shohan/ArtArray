@@ -69,7 +69,7 @@ export default function SignUp() {
       </form>
     </div>
     <div className="flex items-center justify-center">
-      <Link href="/">
+      <Link href="/auth/signup">
         <Image
           src="/signin.svg"
           alt="Sign In Icon"
