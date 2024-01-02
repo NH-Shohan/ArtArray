@@ -28,20 +28,12 @@ export default function Navbar() {
               <p>Home</p>
             </Link>
             <Link
-              href="/user/about"
+              href="/user/upload"
               className={`hover:text-black transition-all ${
-                pathname == "/user/about" ? "text-black font-bold" : ""
+                pathname == "/user/upload" ? "text-black font-bold" : ""
               }`}
             >
-              <p>About</p>
-            </Link>
-            <Link
-              href="/user/contact"
-              className={`hover:text-black transition-all ${
-                pathname == "/user/contact" ? "text-black font-bold" : ""
-              }`}
-            >
-              <p>Contact</p>
+              <p>Upload</p>
             </Link>
           </div>
 
